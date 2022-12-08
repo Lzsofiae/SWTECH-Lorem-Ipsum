@@ -1,0 +1,502 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html style="direction: ltr;" lang="hu">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>SRS dokumentum</title>
+    <style type="text/css">
+      body {
+        background-image: linear-gradient(to top right, rgb(30, 0, 10), rgb(40, 0, 10), rgb(50, 0, 10), rgb(120, 0, 10), rgb(50, 50, 60), rgb(40, 40, 50), rgb(30, 30, 40));
+        color: rgb(255, 255, 255);
+        font-family: 'Trebuchet MS', sans-serif;
+        padding-top: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+
+      #NT {
+        float: right;
+        margin: 0 0 4em 15px;
+      }
+
+      .ol {
+        margin-bottom: 0.5em;
+        font-size: 20 !important;
+      }
+
+      ol {
+        list-style-type: upper-roman;
+        margin-left: 10px;
+      }
+
+      ol.low {
+        list-style-type: lower-roman;
+      }
+
+      a:link {
+        color: rgb(220, 180, 0);
+      }
+
+      a:visited {
+        color: rgb(140, 100, 0);
+      }
+
+      p.title {
+        text-align: center;
+        font-size: 28;
+        font-weight: bold;
+      }
+
+      p {
+        text-align: justify;
+      }
+
+      #ttj {
+        margin-left: auto !important;
+        color: rgb(220, 180, 0);
+      }
+
+      table {
+        border-collapse: collapse;
+        border-spacing: 0;
+      }
+
+      td,
+      th {
+        border-color: inherit;
+        border-style: solid;
+        border-width: 1px;
+        font-size: 16px;
+        padding: 15px 10px;
+      }
+
+      th {
+        background-color: rgba(30, 30, 30, 0.5);
+      }
+
+      td {
+        background-color: rgba(50, 50, 50, 0.5);
+      }
+
+      figcaption {
+        text-align: center;
+      }
+
+      figure {
+        float: right;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="https://i.imgur.com/ReOAgvS.png" alt="Nagy Testvér" height="50%" id="NT">
+    <p class="title">Szoftvertechnológia beadandó</p>
+    <p class="title">Nagy Testvér Szeme és Füle</p>
+    <h2 style="margin-bottom: 20px;"> Tartalomjegyzék</h2>
+    <div>
+      <ol id="ttj">
+        <li class="ol">
+          <a href="#1">Bevezetés</a>
+        </li>
+        <li class="ol">
+          <a href="#2">Áttekintés</a>
+        </li>
+        <li class="ol">
+          <a href="#3">A rendszer funkciói</a>
+        </li>
+        <ol class="low">
+          <li class="ol">
+            <a href="#31">Az Archívum</a>
+          </li>
+          <li class="ol">
+            <a href="#32">Admin</a>
+          </li>
+          <li class="ol">
+            <a href="#33">Mesterséges intelligencia</a>
+          </li>
+          <li class="ol">
+            <a href="#34">Alany</a>
+          </li>
+          <li class="ol">
+            <a href="#35">Vevő</a>
+          </li>
+        </ol>
+        <li class="ol">
+          <a href="#4">Használhatóság</a>
+        </li>
+        <li class="ol">
+          <a href="#5">Megbízhatóság</a>
+        </li>
+        <ol class="low">
+          <li class="ol">
+            <a href="#51">Biztonság</a>
+          </li>
+        </ol>
+        <li class="ol">
+          <a href="#6">Teljesítmény</a>
+        </li>
+        <li class="ol">
+          <a href="#7">Támogatottság</a>
+        </li>
+        <li class="ol">
+          <a href="#8">Tervezési korlátozások</a>
+        </li>
+        <li class="ol">
+          <a href="#9">Online dokumentáció és Help rendszer</a>
+        </li>
+        <li class="ol">
+          <a href="#10">Felhasznált kész komponensek</a>
+        </li>
+        <li class="ol">
+          <a href="#11">Interfészek</a>
+        </li>
+        <li class="ol">
+          <a href="#12">Alkalmazott szabványok</a>
+        </li>
+        <li class="ol">
+          <a href="#13">Szótár</a>
+        </li>
+      </ol>
+    </div>
+    <ol>
+      <!-- Nagy ordered list, az egészet átfedi -->
+      <h1>
+        <li>
+          <a name="1">Bevezetés</a>
+      </h1>
+      <p>Ebben a dokumentumban a Lorem Ipsum által készített programmal szemben támasztott funkcionális és nem funkcionális követelményeket foglaljuk össze. Megtalálható a dokumentumban a szoftver biztonsági, ségítő rendszeri, és teljesítménybeli tulajdonságai is.</p>
+      </li>
+      <h1>
+        <li>
+          <a name="2">Áttekintés</a>
+      </h1>
+      <p>A mai világban az információ szerzés sokféleképpen történhet, viszont eddig jogszabályok tiltották a személyes tartalmak nyilvánosságra hozatalát. A Lorem Ipsum alkalmazása segítségével a vevő szert tehet olyan tartalmakra, amikre eddig soha nem. <br>NagyTestvér egy olyan közösségi alkalmazás, ami rendkívül sokban hasonlít más ilyen platformokhoz egy különbséggel: a felhasználó -továbbiakban tükörkép- nem maga dönti el, mikor és mit posztol. Ez azt jelenti, hogy az alkalmazás minden huszonnégy órában véletlenszerűen kiválaszt egy képet, videót vagy üzenetsort, amit ki fog lökni a világ- vagy helyi hálóra. Ezt a tartalmat a többi tükörkép megnézheti, illetve értékelheti. Az, hogy a vevő pontosan mire hasznosítja ezt az értékelésből számított adatot az már a Lorem Ipsumtől független. </p>
+      </li>
+      <figure>
+        <img src="https://i.imgur.com/yhAXzV2.png" alt="Teljes usecase diagram">
+        <figcaption>Teljes usecase diagram</figcaption>
+      </figure>
+      <h1>
+        <li>
+          <a name="3">A rendszer funkciói</a>
+      </h1>
+      <p>Itt a szoftverrel szemben támasztott funkcionális követelmények vannak összefoglalva, szétszedve külön:
+      <ul>
+        <li>Archívumra</li>
+        <li>Adminra</li>
+        <li>Mesterséges intelligenciára</li>
+        <li>Vevőre</li>
+        <li>Tükörképre, vagy alanyra</li>
+      </ul>
+      </p>
+      <ol class="low">
+        <h2>
+          <li>Az <a name="31">Archívum</a> egy olyan adatbázis ami husszonnégy órás ciklusokkal dolgozik. Ez azt jelenti, hogy minden nap új média tartalmat tölt fel, az előző napit pedig törli. Főbb feladatai:
+        </h2>
+        <ul>
+          <li>Adatok tárolása 24 óráig</li>
+          <li>Adatok törlése 24 óra után</li>
+          <li>Mentett adatok kiolvasása</li>
+        </ul>
+        <h3>Adatok tárolása</h3>
+        <ul>
+          <li>Cél: Ez mindennek a kezdete. Egy olyan funkcióról van szó, ami nélkül a rendszer nem is létezhet. Stabilan el kell tárolnia az össszes médiatartalmat.</li>
+          <li>Prekondíciók: Meglegyenek a megfelelő hardveres erőforrások.</li>
+          <li>Post kondíciók: Ne legyen már felöltve egy fájl az új helyére.</li>
+          <li>Main flow / Elvárt működés: A médiatartalmak biztonságosan, titkosítva el legyenek tárolva.</li>
+          <li>Alternate flow: nincs</li>
+        </ul>
+        <h3>Adatok törlése</h3>
+        <ul>
+          <li>Cél: A ciklus fenntartása érdekében muszáj megszabadulni a tárolt elemektől.</li>
+          <li>Prekondíciók: Legyen mit kitörölni az Archívumból.</li>
+          <li>Post kondíciók: nincs</li>
+          <li>Main flow: Egy bizonyos időpontban flusholja az Archívum tartalmát.</li>
+          <li>Alternate flow: Ha nincs mit kitörölni, akkor pihen.</li>
+        </ul>
+        <h3>Mentett adatok kiolvasása</h3>
+        <ul>
+          <li>Cél: El kell érnie közösségi oldalnak az adatbázis ezen részét, ezt követően meg tudja jeleníteni a fájlokat.</li>
+          <li>Prekondíciók: Ne legyen üres a mező.</li>
+          <li>Post kondíciók: Visszajelzés az Archívum felé.</li>
+          <li>Main flow: Adatok olvasása.</li>
+          <li>Alternate flow: Visszajelzés az Archívum felé, mert hiányos vagy olvashatatlan a tartalom.</li>
+        </ul>
+        </li>
+        <h2>
+          <li>Az <a name="32">Admin</a> felügyeli, hogy a rendszer tökéletesen működjön. Nem a tartalmi elemekkel foglalkozik, hanem a rendszer felügyeletét ellátó, afelett teljes kontrollal rendelkező felhasználó. Főbb feladatai közé tartozik:
+        </h2>
+        <ul>
+          <li>Archívum méretének növelése</li>
+          <li>Mesterséges Intelligencia Karbantartása</li>
+          <li>Adott esetben hibaelhárítás</li>
+          <li>Rendszer felügyelése</li>
+        </ul>
+        <h3>Archívum méretének növelése</h3>
+        <ul>
+          <li>Cél: Ha elfogy a tárterület az archívum méretét növelni kell.</li>
+          <li>Prekondíciók: Az adatmennyiség számára nincs elég hely.</li>
+          <li>Post kondíciók: Tovább nő a menthető adatok száma.</li>
+          <li>Main flow: A rendszer tovább működik.</li>
+          <li>Alternate flow: Amíg elég a hely, addig nincs jelzés.</li>
+        </ul>
+        <h3>Mesterséges intelligencia karbantartása</h3>
+        <ul>
+          <li>Cél: A mesterséges intelligencia használata közben a meghibásodásra utaló jelek alapján egy szükséges karbantartás, vagy időszakos karbantartás futtatása. A rendszer nem áll le, rendeltetésszerűen működik.</li>
+          <li>Prekondíciók: Az alkalmazás működéséhez elengedhetetlen a mesterséges intelligencia használata. Bármely hiba esetén a karbantartásra gondolni kell.</li>
+          <li>Post kondíciók: Időszakos karbantartások, ellenőrzések szükségesek. </li>
+          <li>Main flow: A rendszer tovább működik.</li>
+          <li>Alternate flow: nincs</li>
+        </ul>
+        <h3>Mesterséges intelligencia hibáinak elhárítása</h3>
+        <ul>
+          <li>Cél: A rendszer nem áll le, rendeltetésszerűen működik.</li>
+          <li>Prekondíciók: A karbantartás során kimutatott hibák fenn állnak.</li>
+          <li>Post kondíciók: Hibaelhárítás után az alkalmazás frissül és működik tovább. </li>
+          <li>Main flow: A rendszer tovább működik.</li>
+          <li>Alternate flow: Hibaelhárítás kötelező.</li>
+        </ul>
+        <h3>Rendszer felügyelése</h3>
+        <ul>
+          <li>Cél: A rendszer működéséért felelős elemek feletti kontroll tartása.</li>
+          <li>Prekondíciók: Hiba esetén azonnali reakció.</li>
+          <li>Post kondíciók: Gyors reakció.</li>
+          <li>Main flow: A rendszer tovább működik.</li>
+          <li>Alternate flow: nincs</li>
+        </ul>
+        </li>
+        <h2>
+          <li>A <a name="33">Mesterséges Intelligencia</a> funkcióját a főbb feladatai felsorolásával és leírásával mutatjuk be:
+        </h2>
+        <ul>
+          <li>Közösségi oldal kezelése/karbantartása (hibaelhárítása)</li>
+          <li>Értékelés biztosítása, értékelés alapján történő besorolás</li>
+          <li>Szűrés</li>
+          <li>Hírek kiírása</li>
+          <li>Képek/videók rögzítése időközönként</li>
+          <li>Egy mentett tartalom kiposztolása 24 óránként egy személyről</li>
+        </ul>
+        <h3>Közösségi oldal kezelése/karbantartása (hibaelhárítás)</h3>
+        <ul>
+          <li>Cél: A közösségi média lelke a tartalom. Zökkenőmentes működés</li>
+          <li>Prekondíciók: Hiba áll fenn a közösségi oldal karbantartásakor. Nem működő funkciók, oldal leáll.</li>
+          <li>Post kondíciók: Folyamatos karbantartás, kisebb hibák javítása.</li>
+          <li>Main flow: Hibák javítás, karbantartások ütemezése és gyors elvégzése.</li>
+          <li>Alternate flow: Nincs.</li>
+        </ul>
+        <h3>Értékelés biztosítása, értékelés alapján történő besorolás</h3>
+        <ul>
+          <li>Cél: Értékelések alapján rangsor felállítása, szabad pontozás, pontozási rendszer kialakítása</li>
+          <li>Prekondíciók: Az emberek letöltik az applikációt, használat során pontoznak másokat.</li>
+          <li>Post kondíciók: Pontozás során rangsor alakul ki, az emberekhez változó értékek vannak hozzárendelve.</li>
+          <li>Main flow: Minél több felhasználó, annál pontosabb értékek.</li>
+          <li>Alternate flow: Nincs. </li>
+        </ul>
+        <h3>Szűrés</h3>
+        <ul>
+          <li>Cél: Keresés gyorsítása, pontosabbá tétele</li>
+          <li>Prekondíciók: Szűrés feltételek szerint, kulcsszavak megadása, gyors találatok.</li>
+          <li>Post kondíciók: Hatékony keresés, testreszabott tartalmak. </li>
+          <li>Main flow: A felhasználó beállítja a szűrési feltételeket és a találatok között válogat.</li>
+          <li>Alternate flow: Keresés. </li>
+        </ul>
+        <h3>Hírek kiírása</h3>
+        <ul>
+          <li>Cél: Az oldal hírfolyamán hírek jelennek meg, amiket a felhasználók meg tudnak tekinteni.</li>
+          <li>Prekondíciók: Random hír generálás és közzététel, felhasználók figyelmének felkeltése.</li>
+          <li>Post kondíciók: Megtekintések alapján eldől, mennyire lett hasznos a hír.</li>
+          <li>Main flow: A hírfolyamon megjelenik a hír és megtekintik a felhasználók.</li>
+          <li>Alternate flow: nincs.</li>
+        </ul>
+        <h3>Videók/képek rögzítése időközönként</h3>
+        <ul>
+          <li>Cél: Az applikációt letöltök telefonján random időben videók/képek készülnek. Ezeket a program eltárolja és elemez.</li>
+          <li>Prekondíciók: Telefon használat -> kép/videó készül -> tárolás -> elemzés.</li>
+          <li>Post kondíciók: Folyamatos ellenőrzés. A felhasználó odafigyel mit használ a telefonján. </li>
+          <li>Main flow: Adatok kinyeréséhez folyamatosan jól kell működni a telefonnak.</li>
+          <li>Alternate flow: nincs.</li>
+        </ul>
+        <h3>Egy mentett tartalom kiposztolása 24 óránként egy személyről</h3>
+        <ul>
+          <li>Cél: Friss tartalom létrehozása, felhasználók figyelmét felkelteni.</li>
+          <li>Prekondíciók: Az elkészült tartalmak random megosztása.</li>
+          <li>Post kondíciók: A megosztás során milyen adatok kerülnek ki és milyen minőségben.</li>
+          <li>Main flow: A felhasználó várja a tartalmat, érdekli mások élete, érdekli róla mit oszt meg a mesterséges intelligencia.</li>
+          <li>Alternate flow: Hír megosztás mentett tartalom nélkül.</li>
+        </ul>
+        </li>
+        <h2>
+          <li>Az <a name="34">Alanyhoz</a> tartozó funkciók:
+        </h2>
+        <ul>
+          <li>Bejelentkezik</li>
+          <li>Értékel</li>
+          <li>Híreket megtekintése (rang)</li>
+          <li>Mások adatlapjának megtekintése (rang)</li>
+          <li>Saját adatlapot megtekint (rang)</li>
+        </ul>
+        <h3>Bejelentkezés</h3>
+        <ul>
+          <li>Cél: Az alkalmazás letöltésével be lehet jelentkezni a felhasználónév és jelszó megadásával. </li>
+          <li>Prekondíciók: Regisztráció után bejelentkezéssel elérhetőek a tartalmak.</li>
+          <li>Post kondíciók: Elfelejtett jelszó/felhasználó név esetén értesítés, bejelentkezés lehetőségének megadása/segítése.</li>
+          <li>Main flow: A bejelentkezés egyszerű legyen, jelszó megjegyzés bejelentkezés után, így a felhasználó kényelme a legfontosabb. </li>
+          <li>Alternate flow: nincs. </li>
+        </ul>
+        <h3>Értékelés</h3>
+        <ul>
+          <li>Cél: Értékelik egymást az emberek. Rangsort képeznek ezzel. </li>
+          <li>Prekondíciók: Skálán való pontozás, mások minősítése.</li>
+          <li>Post kondíciók: Az értékelés fontos, hogy a rangsor kialakuljon.</li>
+          <li>Main flow: Pozitív, vagy negatív visszacsatolás, amire figyelnek a felhasználók.</li>
+          <li>Alternate flow: Nincs.</li>
+        </ul>
+        <h3>Hírek megtekintése</h3>
+        <ul>
+          <li>Cél: Az alany rákanttintva a megfelelő gombra, átdobódjon a hírportálra.</li>
+          <li>Prekondíciók: Az alkalmazásban megtalálható hírek böngészése.</li>
+          <li>Post kondíciók: Nem megfelelő minőségű értékelés esetén funkció letiltása.</li>
+          <li>Main flow: Szövegdobozok és/vagy képek megjelenítése.</li>
+          <li>Alternate flow: Egy "kevés a pontszáma" üzenet, a belépés helyett.</li>
+        </ul>
+        <h3>Mások adatlapjának megtekintése</h3>
+        <ul>
+          <li>Cél: AZ alany megtekintheti mások profilját.</li>
+          <li>Prekondíciók: Alkalmazás le legyen töltve, illetve megfelelő értékelése legyen.</li>
+          <li>Post kondíciók: Nem lehet már a megtekinteni kívánt személy lapján.</li>
+          <li>Main flow: Tekinteni kívánt személy lapjának megjelenítése.</li>
+          <li>Alternate flow: Elégtelen mennyiségű pont esetén funkció tiltása.</li>
+        </ul>
+        <h3>Saját adatlap megtekintése</h3>
+        <ul>
+          <li>Cél: Az alany lássa, hány pontja van, illetve a saját adatait.</li>
+          <li>Prekondíciók: Megfelelő minőségű értékelés és az alkalmazás megléte.</li>
+          <li>Post kondíciók: Nem lehet már a saját adatlapján.</li>
+          <li>Main flow: Saját profil megtekintése.</li>
+          <li>Alternate flow: "Kevés pontszám" üzenet, funkció letiltása.</li>
+        </ul>
+        </li>
+        </li>
+        <h2>
+          <li>A <a name="35">Vevő </a>funkciói:
+        </h2>
+        <ul>
+          <li>Rangsor alapú megszorítás/jutalmazás</li>
+          <li>Rangsor megtekintése (rang)</li>
+        </ul>
+        <h3>Rangsor alapú megszorítás-jutalmazás</h3>
+        <ul>
+          <li>Cél: A vevő vissza tudja ellenőrizni a felhasználókat, adatokat nyerjen ki a mentésekből. </li>
+          <li>Prekondíciók: Rangsor jön létre és ez alapján lehet a felhasználót jutalmazni vagy hátráltatni.</li>
+          <li>Post kondíciók: A megszorítások, jutalmazások befolyásolhatják egy felhasználó profilját. </li>
+          <li>Main flow: Az alkalmazás használói odafigyelnek az értékelésekre.</li>
+        </ul>
+        <h3>Rangsor megtekintés</h3>
+        <ul>
+          <li>Cél: A vevő vissza tudja ellenőrizni a felhasználókat. </li>
+          <li>Prekondíciók: Rangsor alapján besorolhatók a felhasználók.</li>
+          <li>Post kondíciók: Számtalan külső tényező befolyásolja a megtekintések számát.</li>
+          <li>Main flow: Az alkalmazás vevői odafigyelnek az értékelésekre.</li>
+        </ul>
+        </li>
+      </ol>
+      <h1><li>
+        <a name="4">Használhatóság</a>
+      </h1>
+      <p>A rendszer egy közösségi háló része, ami egy közösségben (pl.: háztartásokban, országokban, a világ minden részén) lesz üzemeltetve. A feladatunk ezért az, hogy egy könnyen kezelhető felületet biztosítunk a felhasználóknak, amit bárki könnyen értelmezhet és használhat napi szinten. Az alkalmazással célunk az, hogy a felület áttekinthető legyen, ne legyenek kérdések a felhasználó részéről. A hivatkozások, egymás utáni lapok tartalma logikainak összetartozó legyen, és ne legyenek félrevezető információk. A felhasználás megkönnyítésére egy kezelési útmutató elfogadása szükséges lehet, ahol minden folyamat bemutatásra kerülne. Ahogy a use case diagramon is láthatjuk, a felhasználók az Alany és az Admin. Az Alany az alapvető funkciókat használhatja, a pontozást, keresést és a hírek olvasását. Semmilyen más feladata nincsen, csak az alkalmazáson belül keres és pontoz. Az Alannyal szemben az Adminnak már több lehetősége van a kezelésre, nagyobb a rálátása az adatokra.</p>
+      <p>A rendszer terhelése minimális, de a nagyszámú bejelentkezés okozhat fennakadásokat az elérés kapcsán.</p>
+      <p>A felhasználói felület grafikus, a nyelv magyar. Külföldi felhasználásra is később lesz lehetőség. Még bevezethető Súgó, ha az alkalmazáson belül valamilyen funkció nem lenne egyértelmű.</p>
+      <p>A felhasználói felület hagyományos és egyszerű kinézetű, követi a mostani trendeket. Letisztult és nem tartalmaz olyan elemeket, amit nem lehetne értelmezni a használat során. Olyan érzése van a felhasználónak, mintha már használta volna a programot. </p>
+
+    </li>
+      <h1>
+        <li>
+          <a name="5">Megbízhatóság</a>
+      </h1>
+      <ol class="low">
+        <h2>
+          <li>
+            <a name="51">Biztonság</a>
+        </h2>
+      <p>A legfontosabb követelmény, hogy biztonságos legyen az alkalmazás használata. Egyik részről fontos, hogy a felhasználók azonosíthatók legyenek, kamu profilok ne jelenhessenek meg. Másik részről pedig fontos, hogy a mentett adatok (pl. rögzített képek, videók, belső hírek) ne kerüljenek illetéktelen kezekbe. Ha mégis visszaélés történne, gyors reagálásra van szükség, az eredeti állapot visszaállítására. A minimális elvárások tehát: felhasználónév és jelszó megadása.</p>
+      <p>Fontos még, hogy mindig elérhető legyen az alkalmazás. Be tudjanak jelentkezni a felhasználók és ne legyenek fennakadások a pontozásban. Ki szeretnénk küszöbölni például az alábbi hibákat: sikertelen bejelentkezés, hibaüzenet, pontokat nem számol/rosszul számol, rangot nem jeleníti meg, nem tölti be más felhasználó/saját profilt. A rendszer hibaelhárítása és karbantartása ebben az esetben nagyon fontos szerepet tölt be.</p>
+      <p>Mivel nem publikus, személyes információkról van szó, így kiemelten kezelendő az adatok titkosítása. A rögzített random képeknek, videóknak, a 24 órában egyszeri megosztott híreknek, pontozásnak és rangnak biztonságban kell lennie. Az adatbázisban alkalmazásra kerülő titkosítás nem eredményez jelentős többletmunkát. </p>
+      <p>Egyéb általános követelmények mellett, nem hagyhatjuk figyelmen kívül az adatvesztés elkerülését sem.</p>
+        <p>Törekszünk a jó kódolásra, megfelelő kivitelezésre, valamint a biztonsági szabványok betartására is. Folyamatos tesztelésnek lesz alávetve a programunk, minden frissítés előtt is. Ezeknél a szoftverünknek a következőknek kell megfelelnie:
+        <ul>
+          <li>Megbízhatóság</li>
+          <li>Hordozhatóság</li>
+          <ul>
+            <li>Átláthatóság</li>
+            <li>Egyszerű kezelés</li>
+          </ul>
+          <li>Funkcionalitás</li>
+          <ul>
+            <li>Biztonság</li>
+            <li>Szórakoztatás</li>
+          </ul>
+          <li>Hatásfok</li>
+          <ul>
+            <li>Gyorsaság</li>
+            <li>Pontosság</li>
+            <li>Vevő igényeinek kielégítése</li>
+            <li>Válaszidő</li>
+          </ul>
+          <li>Használhatóság</li>
+          <ul>
+            <li>Célnak megfelelő</li>
+            <li>Értelmezhető</li>
+            <li>Egyszerű</li>
+          </ul>
+        </ul>
+        </p>
+        </li>
+        <h2>
+          <li>
+            <a name="52">Hibalehetőségek</a>
+        </h2>
+        <p>Az alkalmazásunk mérete eszközfüggő, de mindegyiknél törekedünk arra, hogy minél kisebb méretű legyen a szoftverünk, ezáltal a forráskód is, hogy minél szélesebb körben lehessen felhasználni, és szórakozni vele. Ezen néhány GB átvizsgálása akár több percet is igénybe vehet, habár a válaszidőnél arra törekedünk, hogy az ne érje el az egy percet. Maga a kód átvizsgálása, a hosszától függően 50-70 másodpercet is igényelhet, eszköztől függően.</p>
+        <p>Az MTBF, illetve MTTR esetében ezek a mutatók nagyban függenek más paraméterektől is, ezért nem lehet ezeket megállapítani, csak egyes karbantartásoknál tudunk, például átlagidőt megadni, amelyek a hibától is függenek, órákon és napokon keresztül bármennyi időt igénybe vehetnek. </p>
+        </li>
+      </ol>
+      </li>
+      <h1><li>
+        <a name="6">Teljesítmény</a>
+      </h1>
+      <ol class="low">
+        <h2><li>
+          <a name="61">Erőforrás igények</a>
+          <ul>
+            Minimális rendszerkövetelmények
+            <table>
+              <thead>
+                <tr>
+                  <th>OS</th>
+                  <th>Processzor</th>
+                  <th>Memória</th>
+                  <th>Tárhely</th>
+                  <th>Kamera</th>
+                  <th>Egyéb</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Android 6.0 or newer</td>
+                  <td rowspan="2">At least dual core CPU</td>
+                  <td rowspan="2">256MB</td>
+                  <td rowspan="2">1GB, Bővülhet</td>
+                  <td>Minimum 8MP kamera.</td>
+                  <td rowspan="2">Internet kapcsolat.</td>
+                </tr>
+                <tr>
+                  <td>iOS 9.3 or newer</td>
+                  <td>Nem összetört lencse</td>
+                </tr>
+              </tbody>
+            </table>
+          </ul>
+        </h2></li>
+
+      </ol>
+      </li>
+    </ol>
+  </body>
+</html>
