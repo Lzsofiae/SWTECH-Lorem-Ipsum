@@ -1,0 +1,226 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html style="direction: ltr;" lang="hu">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Analízis modell</title>
+    <style type="text/css">
+      body {
+        background-image: linear-gradient(to top right, rgb(30, 0, 10), rgb(40, 0, 10), rgb(50, 0, 10), rgb(120, 0, 10), rgb(50, 50, 60), rgb(40, 40, 50), rgb(30, 30, 40));
+        color: rgb(255, 255, 255);
+        font-family: 'Trebuchet MS', sans-serif;
+        padding-top: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+
+      img {
+        padding-right: 25px;
+        float: none !important;
+        clear: left;
+        height: 50%;
+      }
+
+      .experimental {
+        float: left
+      }
+
+      #NT {
+        float: right !important;
+        margin: 0 0 4em 15px;
+        padding: 0px !important;
+      }
+
+      .ol {
+        margin-bottom: 0.5em;
+        font-size: 20 !important;
+      }
+
+      ol {
+        list-style-type: upper-roman;
+        margin-left: 10px;
+      }
+
+      ol.low {
+        list-style-type: lower-roman;
+      }
+
+      a:link {
+        color: rgb(220, 180, 0);
+      }
+
+      a:visited {
+        color: rgb(140, 100, 0);
+      }
+
+      p.title {
+        text-align: center;
+        font-size: 28;
+        font-weight: bold;
+      }
+
+      p {
+        text-align: justify;
+      }
+
+      #ttj {
+        margin-left: auto !important;
+        color: rgb(220, 180, 0);
+      }
+
+      table {
+        border-collapse: collapse;
+        border-spacing: 0;
+      }
+
+      td,
+      th {
+        border-color: inherit;
+        border-style: solid;
+        border-width: 1px;
+        font-size: 16px;
+        padding: 15px 10px;
+      }
+
+      th {
+        background-color: rgba(30, 30, 30, 0.5);
+      }
+
+      td {
+        background-color: rgba(50, 50, 50, 0.5);
+      }
+    </style>
+  </head>
+  <body>
+    <img src="https://i.imgur.com/ReOAgvS.png" alt="Nagy Testvér" id="NT">
+    <p class="title">Szoftvertechnológia beadandó</p>
+    <p class="title">Nagy Testvér Szeme és Füle</p>
+    <h2 style="margin-bottom: 20px;"> Tartalomjegyzék</h2>
+    <div>
+      <ol id="ttj">
+        <li class="ol">
+          <a href="#1">Bevezetés</a>
+        </li>
+        <li class="ol">
+          <a href="#2">Felhasználói felület</a>
+        </li>
+        <ol class="low">
+          <li class="ol">
+            <a href="#21">Bejelentkezési Képernyő</a>
+          </li>
+          <li class="ol">
+            <a href="#22">Üdvözlő felület</a>
+          </li>
+          <li class="ol">
+            <a href="#23">Saját adatlap</a>
+          </li>
+          <li class="ol">
+            <a href="#24">Közösségi értékelés</a>
+          </li>
+        </ol>
+        <li class="ol">
+          <a href="#3">A funkcionális modell kiegészítése</a>
+        </li>
+        <ol class="low">
+          <li class="ol">
+            <a href="#31">Felhasználói menü</a>
+          </li>
+          <li class="ol">
+            <a href="#32">Felhasználói funkciók</a>
+          </li>
+        </ol>
+      </ol>
+    </div>
+    <ol>
+      <!-- Nagy ordered list, az egészet átfedi -->
+      <h1>
+        <li>
+          <a name="1">Bevezetés</a>
+      </h1>
+      <p>A következő dokumentumban a tervezendő program analízis modelljét fogjuk bemutatni. A már korábban megírt SRS dokumentum segítségével fogjuk létrehozni és az objektum orientált analízist hivatott bemutatni. Tartalmaz egy kezdeti szintű osztálydiagramot, egy dinamikus modellt, aminek a legfontosabb részei az együttműködési diagramok. Tartalmaz továbbá egy funkcionális modellt, majd pedig kombinálva a dinamikus és funkcionális modellt, létrehoztunk egy végleges analízis szintű osztálydiagramot.</p>
+      </li>
+      <h1>
+        <li>
+          <a name="2">Felhasználói felület</a>
+      </h1>
+      <div class="experimental">
+        <ol class="low">
+          <h2>
+            <li>
+              <a name="21">Bejelentkezési képernyő</a>
+          </h2>
+          <p>Elsőként a bejelentkezési képernyő fogad minket, ahol értelemszerűen bejelentkezhetünk Felhasználói azonosítóval és jelszóval. Ezen kívül lehetőségünk lesz elérni a súgót.</p>
+          <img src="https://i.imgur.com/4k6RhAU.png" alt="Bejelentkezési képernyő jelszóval és felhasználói azonosítóval">
+          <img src="https://i.imgur.com/naPWm2Y.png" alt="Bejelentkezési képernyő">
+          </li>
+          <h2>
+            <li>
+              <a name="22">Üdvözlő felület</a>
+          </h2>
+          <p>Itt található a legtöbb információ, ami a tükörkép elé fog tárulni. Fentről lefelé:</p>
+          <img src="https://i.imgur.com/UVfXix4.png" alt="Üdvözlő képernyő">
+          <ul>
+            <li>Képes keresni a nagyító ikon használatával. Ennek fő célja más tükörkép felhasználójának megkeresése, esetleg specifikus ember értékelése.</li>
+            <li>A profilkép ikonra kattintva eléri a saját profilját. Ugyanez a cselekvés elérhető a <a href="#23">"Saját Adatlap"</a> menüpontban is. </li>
+            <li>
+              <a href="#24">"Közösségi értékelés"</a> gombra kattintva eljut az azonos névvel ellátott panelra, ahol ténylegesen megadhatja egy 1-től 10-ig terjedő skálán, hogy mit gondol az illetőkről.
+            </li>
+            <li>Hírek menüpontban eljut a hírekhez, amiket az adminisztrátor, vagy a tulajdonos posztolhat ki. Ezek lehetnek teljesen átlagos dolgok, vagy éppen munkahelyi újdonságok. Teljes mértékben a Vevőn múlik.</li>
+            <li>Képek és videók értékelése menüpontban képeket és videókat fog kapni, amiket 1-től 10-ig értékel.</li>
+            <li>Üzenetek értékelése pontban üzenetekről készüét képernyőképeket fog kapni, amiket értékelhet.</li>
+          </ul>
+          </li>
+          <h2>
+            <li>
+              <a name="23">Saját adatlap</a>
+          </h2>
+          <p>Itt a tükörkép a saját "állását" fogja majd megtekinteni. Tudomást szerezhet jelenlegi pontszámáról, illetve a besorolásáról is. Ezek az alap "Tabula Rasa" verzióban teljesen hatástalanok, ám a hatásuk testreszabható.</p>
+          <p>Ezen kívül található itt egy kijelentkezés gomb is, aminek funkciója magától értetődő.</p>
+          <img src="https://i.imgur.com/vXQ8QJL.png" alt="Saját adatlap">
+          </li>
+          <h2>
+            <li>
+              <a name="24">Közösségi értékelés</a>
+          </h2>
+          <p>Itt választhatjta ki a felhasználó, mekkora pontszámot ad a másiknak. A szám kiválasztását egy csúszka segítségével teheti meg. Azon kívül választhat, hogy videót vagy képet értékel. Korábban említetthez hasonóan ez a funkció inkább szórakozás céljából, illetve kipróbálás végett van a "Tabula Rasa" verzióban. Semmilyen hatása nincs.</p>
+          <p>A már előbb említett funkción kívül lehetőség lesz elmenteni felhasználók profiljait. Ha úgy tetszik "követni" őket.</p>
+          <p>Természetesen innen is elérhető a <a href="#23">saját adatlap</a> és a keresés is. </p>
+          <img src="https://i.imgur.com/76Rwp6o.png" alt="Közösségi értékelés">
+          </li>
+        </ol>
+      </div>
+      </li>
+      <h1>
+        <li>
+          <a name="3">Funkcionális modell kiegészítése</a>
+      </h1>
+      <p>Ezen a modellen minden funkció megtalálható. A következő néhány pontban végigmegyünk rajta.</p>
+      <img style="height:auto;clear:both;" src="https://i.imgur.com/1WRrqqO.jpg" alt="Funkcionális modell">
+      <ol class="low">
+        <h2>
+          <li>
+            <a name="31">Felhasználói menü</a>
+        </h2>
+        <p>Itt láthatjuk a felhasználó által elérhető funkciókat.</p>
+        <img src="https://i.imgur.com/WFb7n6x.jpg" alt="Felh. menü">
+        <p>Jobbról haladva az első két funkció felhasználói, a többi pedig már az alkalmazásé.</p>
+        <ul>
+          <li>Felhasználói menü: Ez tulajdonképpen a mobil alkalmazás összes funkciója.</li>
+          <li>Fotó: Itt készülnek a képek, amiket később feltölthet a rendszer. Elkészül a kép és amennyiben átmegy a szűrőn és az eszköz csatlakozva van az internethez, fel is tölti azt.</li>
+          <li>Eredmény: Az értékelésekhez tartozó mező. Itt tárolódik el az a pontszám, amit a tükörkép elért. Innen lehet bővíteni az alkalmazást például valóéletbeli megszorításokkal, vagy éppen egy online áruház bizonyos funkcióinak letiltásával.</li>
+          <li>Offline tárolás: Ha nem rendelkezik az eszköz internetkapcsolattal, akkor ide kerülnek a képek. Egyfajta buffer, ahonnan később fel kerülnek az internetre.</li>
+          <li>Filekezelés: A kiválasztott kép áttekintése következik. Ennek segítségével küldi az eszköz a felhőbe az adatokat.</li>
+          <li>Cloud: Itt tárolódik végül a megjelenített adat. Ciklikusan flush-ol, ezért nagy mennyiségű adatfolyamra lehet számítani.</li>
+        </ul>
+        </li>
+        <h2>
+          <li>
+            <a name="32">Felhasználói funkciók</a>
+        </h2>
+        <p>Ezen a diagramon látszanak a felhasználói felület funkciói, részletesebben.</p>
+        <img style="height:auto;" src="https://i.imgur.com/KGcCr3p.jpg" alt="Felh funkciók">
+        </li>
+      </ol>
+      </li>
+    </ol>
+  </body>
+</html>

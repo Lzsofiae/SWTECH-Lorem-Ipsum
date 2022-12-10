@@ -54,7 +54,10 @@
         margin-left: auto !important;
         color: rgb(220, 180, 0);
       }
-
+      #uc-d{
+        background-color: rgba(255,255,255,0.4);
+        border-radius: 140px;
+      }
       table {
         border-collapse: collapse;
         border-spacing: 0;
@@ -89,7 +92,7 @@
   <body>
     <img src="https://i.imgur.com/ReOAgvS.png" alt="Nagy Testvér" height="50%" id="NT">
     <p class="title">Szoftvertechnológia beadandó</p>
-    <p class="title">Nagy Testvér Szeme és Füle</p>
+    <p class="title">NagyTestvér</p>
     <h2 style="margin-bottom: 20px;"> Tartalomjegyzék</h2>
     <div>
       <ol id="ttj">
@@ -101,7 +104,7 @@
         </li>
         <li class="ol">
           <a href="#3">A rendszer funkciói</a>
-        </li>
+
         <ol class="low">
           <li class="ol">
             <a href="#31">Az Archívum</a>
@@ -119,17 +122,19 @@
             <a href="#35">Vevő</a>
           </li>
         </ol>
+          </li>
         <li class="ol">
           <a href="#4">Használhatóság</a>
         </li>
         <li class="ol">
           <a href="#5">Megbízhatóság</a>
-        </li>
+
         <ol class="low">
           <li class="ol">
             <a href="#51">Biztonság</a>
           </li>
         </ol>
+        </li>
         <li class="ol">
           <a href="#6">Teljesítmény</a>
         </li>
@@ -147,9 +152,32 @@
         </li>
         <li class="ol">
           <a href="#11">Interfészek</a>
+
+        <ol class="low">
+          <li class="ol">
+            <a href="#111">Felhasználói interfészek</a>
+          </li>
+          <li class="ol">
+            <a href="#112">Hardver interfészek</a>
+          </li>
+          <li class="ol">
+            <a href="#113">Szoftver interfészek</a>
+          </li>
+          <li class="ol">
+            <a href="#114">Kommunikációs interfészek</a>
+          </li>
+        </ol>
         </li>
         <li class="ol">
           <a href="#12">Alkalmazott szabványok</a>
+          <ol class="low">
+            <li class="ol">
+              <a href="#121">Kötelezően alkalmazandó szabványok</a>
+            </li>
+            <li class="ol">
+              <a href="#122">Választás alapján alkalmazott szabványok</a>
+            </li>
+          </ol>
         </li>
         <li class="ol">
           <a href="#13">Szótár</a>
@@ -171,7 +199,7 @@
       <p>A mai világban az információ szerzés sokféleképpen történhet, viszont eddig jogszabályok tiltották a személyes tartalmak nyilvánosságra hozatalát. A Lorem Ipsum alkalmazása segítségével a vevő szert tehet olyan tartalmakra, amikre eddig soha nem. <br>NagyTestvér egy olyan közösségi alkalmazás, ami rendkívül sokban hasonlít más ilyen platformokhoz egy különbséggel: a felhasználó -továbbiakban tükörkép- nem maga dönti el, mikor és mit posztol. Ez azt jelenti, hogy az alkalmazás minden huszonnégy órában véletlenszerűen kiválaszt egy képet, videót vagy üzenetsort, amit ki fog lökni a világ- vagy helyi hálóra. Ezt a tartalmat a többi tükörkép megnézheti, illetve értékelheti. Az, hogy a vevő pontosan mire hasznosítja ezt az értékelésből számított adatot az már a Lorem Ipsumtől független. </p>
       </li>
       <figure>
-        <img src="https://i.imgur.com/yhAXzV2.png" alt="Teljes usecase diagram">
+        <img id="uc-d" src="https://i.imgur.com/hTGmDKG.png" alt="Teljes usecase diagram">
         <figcaption>Teljes usecase diagram</figcaption>
       </figure>
       <h1>
@@ -524,7 +552,162 @@
 <li>
   <a name="8">Tervezési korlátozások</a>
   </h1>
-  <p>Mivel magát a fejlesztést IntelliJ-ben végezzük ezen belül is java nyelven ezért maga az egyetlen kikötés talán az lenne a további fejlesztéssel kapcsolatban, hogy a java környezetet használjanak. A szerver alapvetően SQL rendszeren fut ezen nem szeretnénk változtatni csak akkor, ha esetleg valami olyan probléma futnánk, amely SQL-ben való megoldása nem elégítene ki a felhasználók igényeit.</p>
+  <p>Mivel magát a fejlesztést IntelliJ-ben végezzük ezen belül is java nyelven ezért maga az egyetlen kikötés talán az lenne a további fejlesztéssel kapcsolatban, hogy java környezetet használjanak. A szerver alapvetően SQL rendszeren fut ezen nem szeretnénk változtatni csak akkor, ha esetleg valami olyan probléma futnánk, amely SQL-ben való megoldása nem elégítene ki a felhasználók igényeit.</p>
+</li>
+<h1>
+  <li>
+    <a name="9">Online dokumentáció és Help rendszer</a>
+  </h1>
+  <p>Szeretnénk, ha a program teljesen felhasználó barát lenne, könnyen kezelhetőnek készül. Érthető lesz azok számára is, akik nem használják minden nap a telefonjukat. Azonban ezektől függetlenül merülhetnek fel kérdések, lehetnek problémák a kezelés során, ezért szükséges egy online segítség kidolgozása. A Help rendszer tartalmazni fog egy Gyakran ismételt kérdések részt. Ide kerülnek majd a felmerülő kérdések és azoknak a megválaszolásai. Később a legsűrűbben feltett kérdések szerint rendezünk majd, addig viszont az alapokkal töltjük fel a fórumot, például:</p>
+  <ul>
+    <li>Bejelentkezés menete/ kijelentkezés menete</li>
+    <li>Hogyan érjük el a saját profilunkat? Hogy érhető el mások profilja?</li>
+    <li>Pontozás menete, szabályrendszere</li>
+    <li>Rang számolása</li>
+    <li>Rang megtekintése, értékelések megtekintése</li>
+    <li>Közzétett képek/videók megtekintése</li>
+    <li>Hírek olvasása</li>
+    <li>Kapcsolat</li>
+    <li>Hibabejelentés folyamata</li>
+  </ul>
+  <p>A GYIK-hez átlátható tartalomjegyzékre lesz szükség, hogy a felhasználó megtalálhassa az őt érintő kérdésre a választ.</p>
+  <p>Ezen kívül lesz még az első lépéseket megkönnyítő dokumentáció, és egy részletes leírás a rendszer használatához. </p>
+  <p>A hibabejelentés fontos pont lesz a kérdések között és egy hibabejelentőre is fel fogjuk hívni a figyelmet. Feltöltésre kerülnek majd az alap hibák, amikkel találkozhatnak a felhasználók (amiket talán meg is tudnak oldani azonnal, és nem kell várni a hibabejelentés átfutására). A dokumentációban minden le lesz írva, így az alkalmazás használója meggyőződhet róla, hogy tényleg hibát talált-e. </p>
+  <p>Az online súgóban elhelyezünk a tartalomjegyzéken kívül egy keresőt, ahol kulcsszavakra lehet majd szűrni. Ezzel is megkönnyítjük a felhasználást. </p>
+  <p>Adódhat olyan alkalom, amikor az illető nem találja a megoldást a problémájára, így erre biztosítani szeretnénk egy „kapcsolat” fület, ahol a karbantartóval fel tudja majd venni a kapcsolatot. </p>
+
+</li>
+<h1>
+  <li>
+    <a name="10">Felhasznált kész komponensek</a>
+  </h1>
+  <p>A rendszer egyetlen fő komponenst vesz igénybe és az az adatbázis szerver. </p>
+  <p>Az alkalmazás felhasználójáról az adatok (képek, videók, szöveges üzenetek, hírek) egy adatbázisban lesznek tárolva. A rendszer a felhasznált és eltárolt információkat ebben tárolja, és így az alkalmazás működéséhez ez elengedhetetlen elem.</p>
+</li>
+<h1>
+  <li>
+    <a name="11">Interfészek</a>
+  </h1>
+  <ol class="low">
+    <h2>
+      <li>
+        <a name="111">Felhasználói interfészek</a>
+      </h2>
+      <p>A program grafikus felhasználói felületet használ (GUI). A grafikus elemeken keresztül tart kapcsolatot a felhasználóval (pl. telefon esetében érintőképernyő). Azért erre esett a választás, mert a kezdő felhasználók is tudják használni, nem okoz nehézséget. </p>
+
+      <ul>
+Az elemek, amik a kezelést segítik:
+        <li>Érintőképernyő (ez az elsődleges)</li>
+        <li>Űrlap (adatok bevitele)</li>
+        <li>Gombok</li>
+        <li>A pontozáshoz pontozó panel létrehozása (lista doboz)</li>
+        <li>Választó gomb (profil közötti választás/profil megtekintése)</li>
+        <li>Előzőleg pontozott személyek megtekintése, hírek visszanézése (lista doboz)</li>
+        <li>Menü (logikailag egymás után elhelyezkedő opciók kiválasztása)</li>
+        <li>stb</li>
+      </ul>
+    </li>
+    <h2>
+      <li>
+        <a name="112">Hardver interfészek</a>
+      </h2>
+      <p>Speciális hardver elemekre nincsen szükség. Az alkalmazás nem használ ujjlenyomat olvasót.</p>
+    </li>
+    <h2>
+      <li>
+        <a name="113">Szoftver interfészek</a>
+    </h2>
+    <ul>
+      <li>Android operációs rendszer kommunikál az ezen alapuló mobil eszközökön a hardverrel.</li>
+      <li>Apple mobil eszközökön pedig iOS.</li>
+      <li>WebRTC kommunikáció gyanánt, IP, HTTP fájlfolyamhoz.</li>
+    </ul>
+    <p></p>
+    <p></p>
+    <p></p>
+  </li>
+  <h2>
+    <li>
+      <a name="114">Kommunikációs interfészek</a>
+    </h2>
+    <p>Elsősorban vezeték nélküli kommunikációra van tervezve, ezért az IEEE 802.11-es szabványt veszi igénybe. Továbbá mobil internet esetén IP-t (4G & 5G).</p>
+  </li>
+  </ol>
+  <h1>
+    <li>
+      <a name="12">Alkalmazott szabványok</a>
+    </h1>
+    <ol class="low">
+      <h2>
+        <li>
+          <a name="121">Kötelezően alkalmazandó szabványok</a>
+        </h2>
+
+        <p>Adatvédelmi törvény(ek)</p>
+        <p>A mentett adatokat külső fél számára nem adjuk tovább. Saját felhasználás és eltelt idő után törlésre kerülnek. </p>
+      </li>
+      <h2>
+        <li>
+          <a name="122">Választás alapján alkalmazott szabványok</a>
+        </h2>
+        <ul>
+          <li>IEEE 802.11 - vezeték nélküli kapcsolathoz.</li>
+          <li>HTTP/3 - fájlok megosztása végett</li>
+          <li>WebRTC - <a href="https://www.w3.org/TR/webrtc/">itt</a> elérhető a szabvány</li>
+        </ul>
+      </li>
+    </ol>
+
+  </li>
+  <h1>
+    <li>
+      <a name="13">Szótár</a>
+    </h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Szó</th>
+          <th>Leírása</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Tükörkép</td>
+          <td>A felhasználó alias neve</td>
+        </tr>
+        <tr>
+          <td>Ciklus</td>
+          <td>Ismétlődő tevékenységek megvalósítására szolgáló folyamat.</td>
+        </tr>
+        <tr>
+          <td>Szövegdoboz</td>
+          <td>Nem módosítható tartalom megjelenítésére használt ablak.</td>
+        </tr>
+        <tr>
+          <td>Információ</td>
+          <td>Értesülés, hír, üzenet, tájékoztatás.</td>
+        </tr>
+        <tr>
+          <td>Use case diagram</td>
+          <td>Összes lehetséges funkciót bemutató ábra</td>
+        </tr>
+        <tr>
+          <td>MTBF</td>
+          <td>Mean Time Between Failures, azaz meghibásodások közt átlagosan eltelt idő</td>
+        </tr>
+        <tr>
+          <td>MTTR</td>
+          <td>Mean Time To Repair: azt mutatja meg, hogy a meghibásodott egység a meghibásodást követően mennyi idő múlva helyezhető ismét üzembe.</td>
+        </tr>
+        <tr>
+          <td>Online</td>
+          <td>a valami megtalálható az interneten vagy valaki fel van kapcsolódva az internetre.</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+
+
 </li>
 </ol> <!-- Nagy ordered list vége -->
   </body>
