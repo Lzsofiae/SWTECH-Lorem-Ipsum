@@ -1,0 +1,468 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html style="direction: ltr;" lang="hu">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Analízis modell</title>
+    <style type="text/css">
+      body {
+        background-image: linear-gradient(to top right, rgb(30, 0, 10), rgb(40, 0, 10), rgb(50, 0, 10), rgb(120, 0, 10), rgb(50, 50, 60), rgb(40, 40, 50), rgb(30, 30, 40));
+        color: rgb(255, 255, 255);
+        font-family: 'Trebuchet MS', sans-serif;
+        padding-top: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+
+      img {
+        padding-right: 25px;
+        float: none !important;
+        clear: left;
+        height: 50%;
+      }
+
+      #NT {
+        float: right !important;
+        margin: 0 0 4em 15px;
+        padding: 0px !important;
+      }
+
+      .ol {
+        margin-bottom: 0.5em;
+        font-size: 20 !important;
+      }
+      ul{
+        list-style-type: none;
+      }
+
+      ol {
+        list-style-type: upper-roman;
+        margin-left: 10px;
+      }
+
+      ol.low {
+        list-style-type: lower-roman;
+      }
+
+      a:link {
+        color: rgb(220, 180, 0);
+      }
+
+      a:visited {
+        color: rgb(140, 100, 0);
+      }
+
+      p.title {
+        text-align: center;
+        font-size: 28;
+        font-weight: bold;
+      }
+
+      p {
+        text-align: justify;
+      }
+
+      #ttj {
+        margin-left: auto !important;
+        color: rgb(220, 180, 0);
+      }
+
+      table {
+        border-collapse: collapse;
+        border-spacing: 0;
+      }
+
+      td,
+      th {
+        border-color: inherit;
+        border-style: solid;
+        border-width: 1px;
+        font-size: 16px;
+        padding: 15px 10px;
+      }
+
+      th {
+        background-color: rgba(30, 30, 30, 0.5);
+      }
+
+      td {
+        background-color: rgba(50, 50, 50, 0.5);
+      }
+    </style>
+  </head>
+  <body>
+    <img src="https://i.imgur.com/ReOAgvS.png" alt="Nagy Testvér" id="NT">
+    <p class="title">Szoftvertechnológia beadandó</p>
+    <p class="title">Nagy Testvér Szeme és Füle</p>
+    <h2 style="margin-bottom: 20px;"> Tartalomjegyzék</h2>
+    <div>
+      <ol id="ttj">
+        <li class="ol">
+          <a href="#1">Bevezetés</a>
+        </li>
+        <li class="ol">
+          <a href="#2">Kezdeti osztálydiagram</a>
+        </li>
+        <ol class="low">
+          <li class="ol">
+            <a href="#21">Osztályok felsorolása</a>
+          </li>
+          <li class="ol">
+            <a href="#22">Osztálydiagram</a>
+          </li>
+          <li class="ol">
+            <a href="#23">Alrendszerek</a>
+          </li>
+        </ol>
+        <li class="ol">
+          <a href="#3">Analízis modell osztályai</a>
+        </li>
+        <ol class="low">
+          <li class="ol">
+            <a href="#m">Main</a>
+          </li>
+          <li class="ol">
+            <a href="#fm">FileManagement</a>
+          </li>
+          <li class="ol">
+            <a href="#os">Offline Storage</a>
+          </li>
+          <li class="ol">
+            <a href="#c">Cloud</a>
+          </li>
+          <li class="ol">
+            <a href="#pm">PasswordManagement</a>
+          </li>
+          <li class="ol">
+            <a href="#g">GUI</a>
+          </li>
+          <li class="ol">
+            <a href="#wp">WelcomePage</a>
+          </li>
+          <li class="ol">
+            <a href="#h">Help</a>
+          </li>
+          <li class="ol">
+            <a href="#l">Login</a>
+          </li>
+          <li class="ol">
+            <a href="#r">Registration</a>
+          </li>
+          <li class="ol">
+            <a href="#um">UserMenu</a>
+          </li>
+          <li class="ol">
+            <a href="#us">UserSettings</a>
+          </li>
+          <li class="ol">
+            <a href="#p">Photos</a>
+          </li>
+          <li class="ol">
+            <a href="#r2">Results</a>
+          </li>
+        </ol>
+      </ol>
+    </div>
+    <ol>
+      <!-- Nagy ordered list, az egészet átfedi -->
+      <h1>
+        <li>
+          <a name="1">Bevezetés</a>
+      </h1>
+      <p>Ebben a dokumentumban az osztályok egymásra épülését és működését szeretnénk prezentálni.</p>
+      </li>
+      <h1>
+        <li>
+          <a name="2">Kezdeti osztálydiagram</a>
+      </h1>
+      <img src="https://i.imgur.com/P7gOBQm.png" alt="Kezdeti Osztálydiagram">
+      <p>Felhasználói felület: Magába foglalja mindegyik alapvető, az alkalmazás felhasználói felületének műkődéséhez szükséges osztályt.</p>
+      <p>Főoldal: Itt található minden olyan funkció, amit a főoldalon fogunk megtalálni.</p>
+      <p>Tárolás: Az alkalmazás által összegyűjtött média tartalmak tárolásával fog ez a rész foglalkozni. Legyen az internet eléréssel, vagy anélkül.</p>
+      <p>Beállítások: Alapvető apróbb beállításokat tartalmaz, mint például a betűméret változtatása. Ugyanakkor itt van a jelszóváltoztatáshoz szükséges osztály.</p>
+        <ol class="low">
+          <h2>
+            <li>
+              <a name="21">Osztályok felsorolása</a>
+          </h2>
+          <ul >
+            <li>Main</li>
+            <li>GUI</li>
+            <li>WelcomePage</li>
+            <li>Help</li>
+            <li>Login</li>
+            <li>Registration</li>
+            <li>UserMenu</li>
+            <li>UserSettings</li>
+            <li>Photos</li>
+            <li>Offline Storage</li>
+            <li>FileManagement</li>
+            <li>Cloud</li>
+            <li>Results</li>
+            <li>PasswordManagement</li>
+          </ul>
+          </li>
+          <h2>
+            <li>
+              <a name="22">Osztálydiagram</a>
+          </h2>
+          <img style="height:auto;" src="https://i.imgur.com/2TPRwMc.png" alt="Class diagram">
+          </li>
+          <h2>
+            <li>
+              <a name="23">Alrendszerek</a>
+          </h2>
+          </li>
+          <ol style="list-style-type: decimal;">
+            <h3><li>Háttérfolyamatok</h3>
+              Minden olyan nem látható folyamat, ami a rendszer működéséhez szükséges.
+              <ul>
+                <li>Main</li>
+                <li>FileManagement</li>
+                <li>Offline Storage</li>
+                <li>Cloud</li>
+                <li>PasswordManagement</li>
+              </ul>
+            </li>
+            <h3>
+              <li>Felhasználói felület folyamatai
+              </h3>
+              <p>Ezekkel tud interakcióba lépni a felhasználó.</p>
+              <ul>
+                <li>GUI</li>
+                <li>WelcomePage</li>
+                <li>Help</li>
+                <li>Login</li>
+                <li>Registration</li>
+                <li>UserMenu</li>
+                <li>UserSettings</li>
+              </ul>
+
+            </li>
+            <h3>
+              <li>Fényképfeldolgozás</h3>
+                <p>Minden ahhoz kapcsolódó dolog, hogy a fényképek biztonságosan felkerüljenek az oldalra.</p>
+
+            <ul>
+              <li>Photos</li>
+              <li>Results</li>
+            </ul>
+            </li>
+          </ol>
+      </li>
+      <h1>
+        <li>
+          <a name="3">Analízis modell osztályai</a>
+      </h1>
+      <ol class="low">
+        <h2>
+          <li>
+            <a name="m">Main</a>
+        </h2>
+        <img src="https://i.imgur.com/sDvSZRS.png" alt="Main">
+        <p>zsófika??? mire gondolt a költő?</p>
+      </li>
+      <h2>
+        <li>
+          <a name="fm">FileManagement</a>
+        </h2>
+        <p>Miután beérkezik a kép, továbbítja a Cloud-ba, vagy az Offline Storage-ba.</p>
+        <img src="https://i.imgur.com/pdalhOl.png" alt="FileManagement">
+        <ul>
+          Attribútum
+          <li>pictureID: int - a feltöltésre kijelölt kép egyedi azonosítója.</li>
+          Metódusok
+          <li>getPicture() - Ezzel a metódussal olvassa ki, melyik képet kell feltölteni.</li>
+          <li>forwardPicture() - Amint megvan a kép, ezzel továbbítja.</li>
+        </ul>
+        </li>
+        <h2><li>
+          <a name="os">Offline Storage</a>
+          </h2>
+          <p>Ha nem lenne internethez kapcsolódva a telefon, akkor ide menti a feltölteni kívánt képet.</p>
+          <img src="https://i.imgur.com/A57tw0l.png" alt="Offline Storage">
+          <ul>
+            Attribútumok
+            <li>photo: file - Maga a kép ide kerül.</li>
+            <li>array: file[] - Ha esetleg több kép van, akkor létrejön egy tömb ezekhez.</li>
+            Metódusok
+            <li>getPicture() - Ezzel kapja magához a képet.</li>
+            <li>forwardPicture() - Amint online állapotba kerül a telefon, továbbítja a képet a Cloud felé.</li>
+          </ul>
+      </li>
+      <h2><li>
+        <a name="c">Cloud</a>
+        </h2>
+        <p>Ide kerülnek fel a képek a FileManagement-ből.</p>
+        <img src="https://i.imgur.com/hOHPmKY.png" alt="Cloud">
+        <ul>
+          Attribútumok
+          <li>pictureID: int - A továbbított kép egyéni azonosítója.</li>
+          <li>dateAdded: date - Feltöltés dátuma.</li>
+          <li>sizeMB: double - Fájl mérete MegaByte-ban.</li>
+          Metódusok
+          <li>displayPicture() - Megjeleníti a képet a közösségi oldalon.</li>
+          <li>forwardResult() - Továbbítja mások értékelését a Results osztályhoz.</li>
+        </ul>
+      </li>
+      <h2>
+        <li>
+          <a name="pm">PasswordManagement</a>
+
+        </h2>
+        <p>Új jelszó beállításához szükséges.</p>
+        <img src="https://i.imgur.com/xsRNB9p.png" alt="PasswordManagement">
+        <ul>
+          Attribútumok
+          <li>email: str - A felhasználóhoz tartozó email cím.</li>
+          <li>newPassword: str - Az új jelszó.</li>
+          Metódusok
+          <li>askNewPassword() - Ez egy dialógus, amiben a felhasználó beállíthatja a newPassword értékét.</li>
+          <li>setPassword() - Ezzel fogja rögzíteni a jelszavát.</li>
+          <li>encryptPassword() - Titkosítja a rögzített jelszót.</li>
+        </ul>
+      </li>
+      <h2>
+        <li>
+          <a name="g">GUI</a>
+      </h2>
+      <img src="https://i.imgur.com/KGMdtIv.png" alt="GUI">
+      <p>Az program felhasználói felülete.</p>
+      <p style="font-size:8px;">(ismét nem vagyok gondolatolvasó)</p>
+      <ul>
+        Metódus
+        <li>loadKepernyo() - Képernyőt tölti be. (???)</li>
+      </ul>
+    </li>
+    <h2>
+      <li>
+        <a name="wp">WelcomePage</a></h2>
+        <img src="https://i.imgur.com/BxXN3C6.png" alt="WelcomePage">
+        <p>Az alkalmazás üdvözlőképernyője. Innen tud majd az alany bejelentkezni.</p>
+        <ul>
+          Attribútumok
+          <li>userName: str - Felhasználói név.</li>
+          <li>next: button - Bejelentkezéshez használt gomb.</li>
+          Metódusok
+          <li>openLogin() - A bejelentkeztető folyamatot indítja el.</li>
+          <li>openHelp() - Segítség kérő ablakhoz irányít át.</li>
+          <li>getActualDate() - Bejelentkezés idejének rögzítéséhez szükséges.</li>
+        </ul>
+
+  </li>
+  <h2><li>
+    <a name="h">Help</a>
+  </h2>
+  <img src="https://i.imgur.com/jmivgRq.png" alt="Help">
+<p>Alapvetően egy segítségkérő ablak. Az alanynak lehetősége van emberi segítséget kérnie.</p>
+<ul>
+  Attribútumok
+  <li>helpEmail: str - A feladó email címe.</li>
+  <li>message: str - Maga az üzenet amivel az Adminhoz fordul.</li>
+  Metódusok
+  <li>setMessage() - Rögzíti az üzenetet.</li>
+  <li>sendMessage() - Elküldi az üzenetet.</li>
+</ul>
+</li>
+<h2><li>
+  <a name="l">Login</a></h2>
+  <img src="https://i.imgur.com/aocMwoc.png" alt="Login">
+  <p>Bejelentkezéshez szükséges osztály.</p>
+  <ul>
+    Attribútumok
+    <li>userName: str - Felhasználói név.</li>
+    <li>password: str - Felhasználói névhez tartozó jelszó.</li>
+    Metódusok
+    <li>getUser() - Átadja a programnak a felh nevet.</li>
+    <li>getPassword() - Átadja a programnak a jelszót.</li>
+    <li>openRegistration() - Regisztrációs felületre irányítja át a felhasználót.</li>
+  </ul>
+
+</li>
+<h2><li>
+<a name="r">Registration</a>
+</h2>
+<img src="https://i.imgur.com/4zn3WZU.png" alt="Registration">
+<p>Regisztrálásra használt felület.</p>
+<ul>
+  Attribútumok
+  <li>email: str - Felhasználóhoz rendelni kívánt email cím.</li>
+  <li>user: str - Felhasználó neve.</li>
+  <li>password: str Felhasználóhoz rendelni kívánt jelszó.</li>
+  Metódusok
+  <li>setEmail() - Rögzíti az email címet.</li>
+  <li>setUser() - Rögzíti a felhasználót.</li>
+  <li>setPassword() - Rögzíti a jelszót.</li>
+</ul>
+</li>
+<h2><li>
+<a name="um">UserMenu</a>
+</h2>
+<img src="https://i.imgur.com/rMOeTg8.png" alt="UserMenu">
+<p>Belépés után erre az oldalra fog kerülni a felhasználó. Itt található majdnem minden felhasználói funkció. A jelszóváltást kivéve.</p>
+<ul>
+  Attribútumok
+  <li>credit: int - Kreditjeinek száma.</li>
+  <li>rank: str - Kreditek alapján kiadott rang.</li>
+  Metódusok
+  <li>displayRank() - Megmutatja a rangot.</li>
+  <li>displayRating() - Megmutatja a krediteket.</li>
+  <li>openPhotos() - Megmutatja a feltöltött képeket.</li>
+  <li>openRating() - Megmutatja a besorolást.</li>
+  <li>openNews() - Generált híreket nyitja meg.</li>
+  <li>openSettings() - Beállítások megnyitásához szükséges.</li>
+</ul>
+</li>
+<h2><li>
+  <a name="us">UserSettings</a>
+</h2>
+<img src="https://i.imgur.com/4CwmzMU.png" alt="UserSettings">
+<p>Felhasználói beállításokat foglalja magába.</p>
+<ul>
+  Attribútumok
+  <li>fontSize: int - Betűméret.</li>
+  <li>fontColor: int - Betűszín.</li>
+  Metódusok
+  <li>openPasswordManagement() - Jelszóváltó képernyőhöz visz át.</li>
+  <li>setFontColor() - Betűszínt állít be.</li>
+  <li>setFontSize() - Betűméretet állít.</li>
+  <li>logout() - Kijelentkezés</li>
+</ul>
+</li>
+<h2><li>
+  <a name="p">Photos</a>
+</h2>
+<img src="https://i.imgur.com/bWaPG0v.png" alt="Photos">
+<p>Képek feldolgozásával foglalkozik az osztály.</p>
+<ul>
+  Attribútumok
+  <li>pictureID: int - Fénykép egyéni azonosítója.</li>
+  <li>foto: jpg - Fénykép fájl.</li>
+  <li>autoFocusOrNot: bool - Autofókusz használatával készült-e a kép vagy sem.</li>
+  <li>flash: bool - Használt-e vakut.</li>
+  <li>result: int - Képre visszaadott értékelések.</li>
+  Metódusok
+  <li>getPicture() - Kiválasztja a feltölteni kívánt fényképet.</li>
+  <li>displayResult() - Értékelést írja ki.</li>
+  <li>getFocusMethod() - Megállapítja a képről, hogy automata vagy kézi fókusszal készült.</li>
+  <li>getFlashUsed() - Megállapítja, hogy vakuval vagy anélkül készült-e.</li>
+  <li>forwardPicture() - Továbbítja a képet Offline Storage-ba vagy pedig Cloud-ba.</li>
+</ul>
+</li>
+<h2><li>
+  <a name="r2">Results</a>
+</h2>
+<img src="https://i.imgur.com/VycSGlL.png" alt="Results">
+<p>Kiértékelés eredményét tárolja, továbbítja.</p>
+<ul>
+  Attribútumok
+  <li>result: int - Összesített értékelés.</li>
+  Metódusok
+  <li>getResult() - Lekérdezi az összesített értékelést.</li>
+  <li>sendResult() - Elküldi a "result" változót.</li>
+</ul>
+</li>
+      </ol>
+      </li>
+    </ol>
+  </body>
+</html>
